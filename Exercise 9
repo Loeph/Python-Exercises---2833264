@@ -1,0 +1,33 @@
+#Simple Quiz Game
+print("Hello and welcome to today's quiz! Let's get started.")
+print() #This helps to create space between paragraph
+print("Question 1: Who is the current president of the United States?")
+total_mark= 0
+X=str(input("A. Barrack Obama\nB. Donald Trump\nC. George Washington ")).lower()
+if X=="b":
+    print("Congratulations! That is the correct answer, well done!")
+    total_mark=total_mark+1
+else:
+    print ("No, that is not correct. The correct answer is B.")
+print()
+print("Question 2: Is -3 a square root of 9?")
+Y=str(input("A. True\nB. False ")).lower()
+if Y=="a":
+    print("Congratulations! That is the correct answer, well done!")
+    total_mark=total_mark+1
+else:
+    print ("No, that is not correct. The correct answer is A.")
+print()
+print("Question 3: Who founded Facebook?")
+Z=str(input("A. Elon Musk\nB. Steve Jobs\nC. Mark Zuckerberg ")).lower()
+if Z=="c":
+    print("Congratulations! That is the correct answer, well done!")
+    total_mark=total_mark+1
+else:
+    print ("No, that is not correct. The correct answer is C.")
+print()
+print("Your final score is", str(int(total_mark/3*100))+"%.")
+if total_mark>=2:
+    print("Well done! That was a good run.")
+else:
+    print("Don't be sad. I'm sure you've learnt a few things today.")
